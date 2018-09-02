@@ -58,6 +58,10 @@
                                             <constraint firstItem="iPU-fQ-jAe" firstAttribute="top" secondItem="AJp-uN-bEa" secondAttribute="top" id="QfR-Zn-BEW"/>
                                             <constraint firstAttribute="bottom" secondItem="iPU-fQ-jAe" secondAttribute="bottom" id="anH-fg-sL0"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="bookImageView" destination="tSg-6F-jgm" id="KQX-4p-ySx"/>
+                                            <outlet property="containerView" destination="iPU-fQ-jAe" id="OHJ-xJ-NmC"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

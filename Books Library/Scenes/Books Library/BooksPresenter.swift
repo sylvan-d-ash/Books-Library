@@ -29,7 +29,6 @@ class BooksPresenterImplementation: BooksPresenter {
     fileprivate var books: [Book] = []
     
     var numberOfBooks: Int {
-        print("count: \(books.count)")
         return books.count
     }
     
@@ -57,8 +56,8 @@ class BooksPresenterImplementation: BooksPresenter {
     }
     
     func configure(cell: BookCollectionViewCell, for row: Int) {
-        //let book = books[row]
-        //cell.display(image: <#T##UIImage#>)
+        let book = books[row]
+        cell.display(imageName: book.image)
         cell.formatCell()
     }
     

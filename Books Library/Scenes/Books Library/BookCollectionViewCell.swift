@@ -13,8 +13,10 @@ class BookCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var bookImageView: UIImageView!
     
-    func display(image: UIImage) {
-        bookImageView.image = image
+    func display(imageName: String) {
+        if let image = UIImage(named: imageName) {
+            bookImageView.image = image
+        }
     }
     
     func formatCell() {
