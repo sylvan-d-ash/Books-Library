@@ -19,6 +19,7 @@ protocol BooksView: class {
 
 protocol BooksPresenter {
     var numberOfBooks: Int { get }
+    var router: BooksViewRouter { get }
     func viewDidLoad()
     func configure(cell: BookCollectionViewCell, for row: Int)
     func getCellSize(size: CGRect) -> CGSize

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="li9-9U-24p">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sf0-IA-g9o">
-                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <rect key="frame" x="10" y="74" width="355" height="583"/>
                                 <color key="backgroundColor" red="0.90980392160000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zNX-0s-OTp">
                                     <size key="itemSize" width="152" height="214"/>
@@ -38,7 +38,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPU-fQ-jAe">
                                                     <rect key="frame" x="0.0" y="0.0" width="152" height="214"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A Clash of Kings" translatesAutoresizingMaskIntoConstraints="NO" id="tSg-6F-jgm">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="No Image" translatesAutoresizingMaskIntoConstraints="NO" id="tSg-6F-jgm">
                                                             <rect key="frame" x="5" y="5" width="142" height="204"/>
                                                         </imageView>
                                                     </subviews>
@@ -75,6 +75,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Books Library" id="WXO-Wj-lFw"/>
                     <connections>
                         <outlet property="collectionView" destination="Sf0-IA-g9o" id="hF7-g4-Gxd"/>
                         <segue destination="IpB-4Y-twN" kind="show" identifier="BooksSceneToBookDetailsSceneSegue" id="Aku-IS-47k"/>
@@ -82,11 +83,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="972" y="31.934032983508249"/>
         </scene>
-        <!--View Controller-->
+        <!--Book Details-->
         <scene sceneID="Jai-Nd-9BV">
             <objects>
-                <viewController id="IpB-4Y-twN" sceneMemberID="viewController">
+                <viewController id="IpB-4Y-twN" userLabel="Book Details" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FSK-mc-9vA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,10 +98,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghi-BH-Bgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="134"/>
+            <point key="canvasLocation" x="1870" y="32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yi4-u2-sf7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="li9-9U-24p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rKo-j0-e35">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Nqx-x9-Zyd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Rk-fR-Tb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="32"/>
         </scene>
     </scenes>
     <resources>
-        <image name="A Clash of Kings" width="300" height="450"/>
+        <image name="No Image" width="300" height="465"/>
     </resources>
 </document>
