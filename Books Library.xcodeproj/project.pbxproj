@@ -21,6 +21,8 @@
 		5EEA09DE213B639F00140454 /* StaticDataBooksGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09DD213B639F00140454 /* StaticDataBooksGateway.swift */; };
 		5EEA09E0213B686D00140454 /* JSONFileBooksGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09DF213B686D00140454 /* JSONFileBooksGateway.swift */; };
 		5EEA09E3213B68D500140454 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA09E2213B68D500140454 /* books.json */; };
+		5EEA09E5213BE92200140454 /* BooksViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09E4213BE92200140454 /* BooksViewRouter.swift */; };
+		5EEA09E8213BE96900140454 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09E7213BE96900140454 /* ViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		5EEA09DD213B639F00140454 /* StaticDataBooksGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticDataBooksGateway.swift; sourceTree = "<group>"; };
 		5EEA09DF213B686D00140454 /* JSONFileBooksGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileBooksGateway.swift; sourceTree = "<group>"; };
 		5EEA09E2213B68D500140454 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
+		5EEA09E4213BE92200140454 /* BooksViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewRouter.swift; sourceTree = "<group>"; };
+		5EEA09E7213BE96900140454 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		5EEA09AC213B5F3E00140454 /* Books Library */ = {
 			isa = PBXGroup;
 			children = (
+				5EEA09E6213BE95800140454 /* Helpers */,
 				5EEA09DA213B636000140454 /* Gateways */,
 				5EEA09D2213B625800140454 /* Entities */,
 				5EEA09CF213B603600140454 /* Scenes */,
@@ -146,6 +151,7 @@
 				5EEA09D0213B61FA00140454 /* BooksConfigurator.swift */,
 				5EEA09D5213B62DD00140454 /* BooksPresenter.swift */,
 				5EEA09D8213B632200140454 /* BookCollectionViewCell.swift */,
+				5EEA09E4213BE92200140454 /* BooksViewRouter.swift */,
 			);
 			path = "Books Library";
 			sourceTree = "<group>";
@@ -166,6 +172,14 @@
 				5EEA09E2213B68D500140454 /* books.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5EEA09E6213BE95800140454 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5EEA09E7213BE96900140454 /* ViewRouter.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,12 +284,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EEA09E5213BE92200140454 /* BooksViewRouter.swift in Sources */,
 				5EEA09D4213B626100140454 /* Book.swift in Sources */,
 				5EEA09DE213B639F00140454 /* StaticDataBooksGateway.swift in Sources */,
 				5EEA09D1213B61FA00140454 /* BooksConfigurator.swift in Sources */,
 				5EEA09B0213B5F3E00140454 /* BooksViewController.swift in Sources */,
 				5EEA09D9213B632200140454 /* BookCollectionViewCell.swift in Sources */,
 				5EEA09DC213B636D00140454 /* BooksGateway.swift in Sources */,
+				5EEA09E8213BE96900140454 /* ViewRouter.swift in Sources */,
 				5EEA09AE213B5F3E00140454 /* AppDelegate.swift in Sources */,
 				5EEA09E0213B686D00140454 /* JSONFileBooksGateway.swift in Sources */,
 				5EEA09D6213B62DD00140454 /* BooksPresenter.swift in Sources */,

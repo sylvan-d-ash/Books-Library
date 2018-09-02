@@ -9,11 +9,10 @@
 import UIKit
 
 class BooksViewController: UIViewController {
-
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private let reuseIdentifier = "BookCollectionViewCell"
-    var configurator = BooksConfiguratorImplementation()
+    fileprivate let reuseIdentifier = "BookCollectionViewCell"
+    let configurator = BooksConfiguratorImplementation()
     var presenter: BooksPresenter!
     
     override func viewDidLoad() {
@@ -25,7 +24,6 @@ class BooksViewController: UIViewController {
         configurator.configure(booksViewController: self)
         presenter.viewDidLoad()
     }
-
 }
 
 extension BooksViewController: UICollectionViewDataSource {
@@ -46,6 +44,12 @@ extension BooksViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+extension BooksViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.didSelect(row: indexPath.row)
+    }
+}
+
 extension BooksViewController: BooksView {
     func showProgress() {
         //
@@ -62,6 +66,5 @@ extension BooksViewController: BooksView {
     func showError(_ title: String, message: String) {
         //
     }
-    
     
 }

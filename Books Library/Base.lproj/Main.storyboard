@@ -77,10 +77,26 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Sf0-IA-g9o" id="hF7-g4-Gxd"/>
+                        <segue destination="IpB-4Y-twN" kind="show" identifier="BooksSceneToBookDetailsSceneSegue" id="Aku-IS-47k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jai-Nd-9BV">
+            <objects>
+                <viewController id="IpB-4Y-twN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FSK-mc-9vA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nWs-hy-3uD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghi-BH-Bgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="134"/>
         </scene>
     </scenes>
     <resources>
