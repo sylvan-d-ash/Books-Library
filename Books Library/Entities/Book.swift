@@ -17,5 +17,5 @@ struct Book: Decodable {
     var pages: Int
     var language: String
     var summary: String
-    var imageUrl: String
+    var image: String
 }

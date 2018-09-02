@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1",
+        "isbn": "0553588486",
+        "title": "A Game of Thrones",
+        "author": "George R. R. Martin",
+        "realeaseDate": "06-08-1996",
+        "pages": 848,
+        "language": "English",
+        "summary": "Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister and supernatural forces are massing beyond the kingdom’s protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the land they were born to. Sweeping from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens.",
+        "image": "A Game of Thrones"
+    },
+    {
+        "id": "2",
+        "isbn": "0553381695",
+        "title": "A Clash of Kings",
+        "author": "George R. R. Martin",
+        "realeaseDate": "28-05-2002",
+        "pages": 761,
+        "language": "English",
+        "summary": "",
+        "image": "A Clash of Kings"
+    },
+    {
+        "id": "3",
+        "isbn": "055358202X",
+        "title": "A Feast for Crows",
+        "author": "George R. R. Martin",
+        "realeaseDate": "17-10-2005",
+        "pages": 1061,
+        "language": "English",
+        "summary": "After centuries of bitter strife, the seven powers dividing the land have beaten one another into an uneasy truce. But it's not long before the survivors, outlaws, renegades, and carrion eaters of the Seven Kingdoms gather. Now, as the human crows assemble over a banquet of ashes, daring new plots and dangerous new alliances are formed while surprising faces—some familiar, others only just appearing—emerge from an ominous twilight of past struggles and chaos to take up the challenges of the terrible times ahead. Nobles and commoners, soldiers and sorcerers, assassins and sages, are coming together to stake their fortunes...and their lives. For at a feast for crows, many are the guests—but only a few are the survivors.",
+        "image": "A Feast For Crows"
+    },
+    {
+        "id": "4",
+        "isbn": "0006479901",
+        "title": "A Storm of Swords: Steel and Snow",
+        "author": "George R. R. Martin",
+        "realeaseDate": "07-04-2001",
+        "pages": 663,
+        "language": "English",
+        "summary": "The Seven Kingdoms are divided by revolt and blood feud. In the northern wastes, a horde of hungry, savage people steeped in the dark magic of the wilderness is poised to invade the Kingdom of the North where Robb Stark wears his new-forged crown. And Robb's defences are ranged against the South, the land of the cunning and cruel Lannisters, who have his young sisters in their power.\n\nThroughout Westeros, the war for the Iron Throne rages more fiercely than ever, but if the wall is breached, no king will live to claim it.",
+        "image": "A Storm of Swords I"
+    },
+    {
+        "id": "5",
+        "isbn": "0007119550",
+        "title": "A Storm of Swords: Blood and Gold",
+        "author": "George R. R. Martin",
+        "realeaseDate": "01-09-2011",
+        "pages": 639,
+        "language": "English",
+        "summary": "Robb Stark may be King in the North, but he must bend to the will of the old tyrant Walder Frey if he is to hold his crown. And while his youngest sister, Arya, has escaped the clutches of the depraved Cersei Lannister and her son, the capricious boy-king Joffrey, Sansa Stark remains their captive.\n\nMeanwhile, across the ocean, Daenerys Stormborn, the last heir of the Dragon King, delivers death to the slave-trading cities of Astapor and Yunkai as she approaches Westeros with vengeance in her heart.",
+        "image": "A Storm of Swords II"
+    },
+    {
+        "id": "6",
+        "isbn": "0007466064",
+        "title": "A Dance with Dragons: Dreams and Dust",
+        "author": "George R. R. Martin",
+        "realeaseDate": "12-06-2011",
+        "pages": 690,
+        "language": "English",
+        "summary": "In the aftermath of a colossal battle, new threats are emerging from every direction.\n\nTyrion Lannister, having killed his father, and wrongfully accused of killing his nephew, King Joffrey, has escaped from King’s Landing with a price on his head.\n\nTo the north lies the great Wall of ice and stone – a structure only as strong as those guarding it. Eddard Stark's bastard son Jon Snow has been elected 998th Lord Commander of the Night’s Watch. But Jon has enemies both inside and beyond the Wall.\n\nAnd in the east Daenerys Targaryen struggles to hold a city built on dreams and dust.",
+        "image": "A Dance With Dragons I"
+    },
+    {
+        "id": "7",
+        "isbn": "0007466072",
+        "title": "A Dance with Dragons: After the Feast",
+        "author": "George R. R. Martin",
+        "realeaseDate": "15-03-2012",
+        "pages": 560,
+        "language": "English",
+        "summary": "The future of the Seven Kingdoms hangs in the balance.\n\nIn King’s Landing the Queen Regent, Cersei Lannister, awaits trial, abandoned by all those she trusted; while in the eastern city of Yunkai her brother Tyrion has been sold as a slave. From the Wall, having left his wife and the Red Priestess Melisandre under the protection of Jon Snow, Stannis Baratheon marches south to confront the Boltons at Winterfell. But beyond the Wall the wildling armies are massing for an assault…\n\nOn all sides bitter conflicts are reigniting, played out by a grand cast of outlaws and priests, soldiers and skinchangers, nobles and slaves. The tides of destiny will inevitably lead to the greatest dance of all.",
+        "image": "A Dance With Dragons II"
+    },
+    {
+        "id": "8",
+        "isbn": "0765326353",
+        "title": "The Way of Kings",
+        "author": "Brandon Sanderson",
+        "realeaseDate": "31-08-2010",
+        "pages": 1007,
+        "language": "English",
+        "summary": "Roshar is a world of stone and storms. Uncanny tempests of incredible power sweep across the rocky terrain so frequently that they have shaped ecology and civilization alike. Animals hide in shells, trees pull in branches, and grass retracts into the soilless ground. Cities are built only where the topography offers shelter.\n\nIt has been centuries since the fall of the ten consecrated orders known as the Knights Radiant, but their Shardblades and Shardplate remain: mystical swords and suits of armor that transform ordinary men into near-invincible warriors. Men trade kingdoms for Shardblades. Wars were fought for them, and won by them.",
+        "image": "The Way of Kings"
+    },
+    {
+        "id": "9",
+        "isbn": "0765326361",
+        "title": "Words of Radiance",
+        "author": "Brandon Sanderson",
+        "realeaseDate": "04-03-2014",
+        "pages": 1087,
+        "language": "English",
+        "summary": "Expected by his enemies to die the miserable death of a military slave, Kaladin survived to be given command of the royal bodyguards, a controversial first for a low-status \"darkeyes.\" Now he must protect the king and Dalinar from every common peril as well as the distinctly uncommon threat of the Assassin, all while secretly struggling to master remarkable new powers that are somehow linked to his honorspren, Syl.\n\nThe Assassin, Szeth, is active again, murdering rulers all over the world of Roshar, using his baffling powers to thwart every bodyguard and elude all pursuers. Among his prime targets is Highprince Dalinar, widely considered the power behind the Alethi throne. His leading role in the war would seem reason enough, but the Assassin's master has much deeper motives.",
+        "image": "Words of Radiance"
+    },
+    {
+        "id": "10",
+        "isbn": "057509334X",
+        "title": "Oathbringer",
+        "author": "Brandon Sanderson",
+        "realeaseDate": "14-11-2017",
+        "pages": 1243,
+        "language": "English",
+        "summary": "Dalinar Kholin's Alethi armies won a fleeting victory at a terrible cost: The enemy Parshendi summoned the violent Everstorm, which now sweeps the world with destruction, and in its passing awakens the once peaceful and subservient parshmen to the horror of their millennia-long enslavement by humans. While on a desperate flight to warn his family of the threat, Kaladin Stormblessed must come to grips with the fact that the newly kindled anger of the parshmen may be wholly justified.\n\nNestled in the mountains high above the storms, in the tower city of Urithiru, Shallan Davar investigates the wonders of the ancient stronghold of the Knights Radiant and unearths dark secrets lurking in its depths. And Dalinar realizes that his holy mission to unite his homeland of Alethkar was too narrow in scope. Unless all the nations of Roshar can put aside Dalinar's blood-soaked past and stand together--and unless Dalinar himself can confront that past--even the restoration of the Knights Radiant will not prevent the end of civilization.",
+        "image": "Oathbringer"
+    }
+]

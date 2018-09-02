@@ -29,6 +29,7 @@ class BooksPresenterImplementation: BooksPresenter {
     fileprivate var books: [Book] = []
     
     var numberOfBooks: Int {
+        print("count: \(books.count)")
         return books.count
     }
     

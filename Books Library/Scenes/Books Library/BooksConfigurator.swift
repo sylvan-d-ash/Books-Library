@@ -14,7 +14,7 @@ protocol BooksConfigurator {
 
 class BooksConfiguratorImplementation: BooksConfigurator {
     func configure(booksViewController: BooksViewController) {
-        let booksGateway = StaticDataBooksGateway()//JSONFileBooksGateway()//
+        let booksGateway = JSONFileBooksGateway() //StaticDataBooksGateway()
         let gateway = BooksGatewayImplementation(booksGateway: booksGateway)
         let presenter = BooksPresenterImplementation(view: booksViewController, booksGateway: gateway)
         
