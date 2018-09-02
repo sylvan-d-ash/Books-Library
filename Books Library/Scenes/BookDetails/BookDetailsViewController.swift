@@ -19,7 +19,14 @@ class BookDetailsViewController: UIViewController {
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var summaryTextView: UITextView!
+    @IBOutlet weak var summaryLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configurator.configure(bookDetailsViewController: self)
+        presenter.viewDidLoad()
+    }
 }
 
 extension BookDetailsViewController: BookDetailsView {
@@ -44,6 +51,7 @@ extension BookDetailsViewController: BookDetailsView {
     }
     
     func display(summary: String) {
-        summaryTextView.text = summary
+        // make this attributed text
+        summaryLabel.text = summary
     }
 }

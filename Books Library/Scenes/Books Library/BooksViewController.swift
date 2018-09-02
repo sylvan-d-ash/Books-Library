@@ -24,6 +24,10 @@ class BooksViewController: UIViewController {
         configurator.configure(booksViewController: self)
         presenter.viewDidLoad()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        presenter.router.prepare(for: segue, sender: sender)
+    }
 }
 
 extension BooksViewController: UICollectionViewDataSource {

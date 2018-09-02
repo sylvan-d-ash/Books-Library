@@ -9,7 +9,7 @@
 import Foundation
 
 protocol BookDetailsConfigurator {
-    func configure()
+    func configure(bookDetailsViewController: BookDetailsViewController)
 }
 
 class BookDetailsConfiguratorImplementation: BookDetailsConfigurator {
@@ -20,7 +20,8 @@ class BookDetailsConfiguratorImplementation: BookDetailsConfigurator {
         self.book = book
     }
     
-    func configure() {
-        //
+    func configure(bookDetailsViewController: BookDetailsViewController) {
+        let presenter = BookDetailsPresenterImplementation(view: bookDetailsViewController, book: book)
+        bookDetailsViewController.presenter = presenter
     }
 }

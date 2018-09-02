@@ -29,6 +29,8 @@ class BooksViewRouterImplementation: BooksViewRouter {
     }
     
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //
+        if let bookDetailsViewController = segue.destination as? BookDetailsViewController {
+            bookDetailsViewController.configurator = BookDetailsConfiguratorImplementation(book: book)
+        }
     }
 }
