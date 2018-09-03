@@ -19,6 +19,5 @@ struct InitializeAppearanceCommand: Command {
         navigationBarAppearance.tintColor = .white
         navigationBarAppearance.barTintColor = .libBackgroundColor
         navigationBarAppearance.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-        print("executed...")
     }
 }

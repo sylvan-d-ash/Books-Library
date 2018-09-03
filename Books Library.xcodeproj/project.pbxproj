@@ -30,6 +30,7 @@
 		5EEA09F4213D3D9500140454 /* InitializeAppearanceCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09F3213D3D9500140454 /* InitializeAppearanceCommand.swift */; };
 		5EEA09F7213D3E4600140454 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09F6213D3E4600140454 /* UIColorExtension.swift */; };
 		5EEA09F9213D473100140454 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09F8213D473100140454 /* UIViewExtension.swift */; };
+		5EEA09FB213D504100140454 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09FA213D504100140454 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		5EEA09F3213D3D9500140454 /* InitializeAppearanceCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeAppearanceCommand.swift; sourceTree = "<group>"; };
 		5EEA09F6213D3E4600140454 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5EEA09F8213D473100140454 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5EEA09FA213D504100140454 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,9 +166,9 @@
 		5EEA09D7213B62E500140454 /* Books Library */ = {
 			isa = PBXGroup;
 			children = (
-				5EEA09AF213B5F3E00140454 /* BooksViewController.swift */,
 				5EEA09D0213B61FA00140454 /* BooksConfigurator.swift */,
 				5EEA09D5213B62DD00140454 /* BooksPresenter.swift */,
+				5EEA09AF213B5F3E00140454 /* BooksViewController.swift */,
 				5EEA09D8213B632200140454 /* BookCollectionViewCell.swift */,
 				5EEA09E4213BE92200140454 /* BooksViewRouter.swift */,
 			);
@@ -223,6 +225,7 @@
 			children = (
 				5EEA09F6213D3E4600140454 /* UIColorExtension.swift */,
 				5EEA09F8213D473100140454 /* UIViewExtension.swift */,
+				5EEA09FA213D504100140454 /* DateExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				5EEA09F4213D3D9500140454 /* InitializeAppearanceCommand.swift in Sources */,
 				5EEA09E5213BE92200140454 /* BooksViewRouter.swift in Sources */,
 				5EEA09D4213B626100140454 /* Book.swift in Sources */,
+				5EEA09FB213D504100140454 /* DateExtension.swift in Sources */,
 				5EEA09DE213B639F00140454 /* StaticDataBooksGateway.swift in Sources */,
 				5EEA09F9213D473100140454 /* UIViewExtension.swift in Sources */,
 				5EEA09ED213BF04F00140454 /* BookDetailsPresenter.swift in Sources */,
