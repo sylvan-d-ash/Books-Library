@@ -26,6 +26,10 @@
 		5EEA09EB213BF04200140454 /* BookDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09EA213BF04200140454 /* BookDetailsConfigurator.swift */; };
 		5EEA09ED213BF04F00140454 /* BookDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09EC213BF04F00140454 /* BookDetailsPresenter.swift */; };
 		5EEA09EF213BF06400140454 /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09EE213BF06400140454 /* BookDetailsViewController.swift */; };
+		5EEA09F2213D3D2E00140454 /* StartupCommandsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09F1213D3D2E00140454 /* StartupCommandsBuilder.swift */; };
+		5EEA09F4213D3D9500140454 /* InitializeAppearanceCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09F3213D3D9500140454 /* InitializeAppearanceCommand.swift */; };
+		5EEA09F7213D3E4600140454 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09F6213D3E4600140454 /* UIColorExtension.swift */; };
+		5EEA09F9213D473100140454 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09F8213D473100140454 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		5EEA09EA213BF04200140454 /* BookDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsConfigurator.swift; sourceTree = "<group>"; };
 		5EEA09EC213BF04F00140454 /* BookDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsPresenter.swift; sourceTree = "<group>"; };
 		5EEA09EE213BF06400140454 /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
+		5EEA09F1213D3D2E00140454 /* StartupCommandsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupCommandsBuilder.swift; sourceTree = "<group>"; };
+		5EEA09F3213D3D9500140454 /* InitializeAppearanceCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeAppearanceCommand.swift; sourceTree = "<group>"; };
+		5EEA09F6213D3E4600140454 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		5EEA09F8213D473100140454 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,8 @@
 		5EEA09AC213B5F3E00140454 /* Books Library */ = {
 			isa = PBXGroup;
 			children = (
+				5EEA09F5213D3E2E00140454 /* Extensions */,
+				5EEA09F0213D3CE200140454 /* Commands */,
 				5EEA09E6213BE95800140454 /* Helpers */,
 				5EEA09DA213B636000140454 /* Gateways */,
 				5EEA09D2213B625800140454 /* Entities */,
@@ -197,6 +207,24 @@
 				5EEA09EE213BF06400140454 /* BookDetailsViewController.swift */,
 			);
 			path = BookDetails;
+			sourceTree = "<group>";
+		};
+		5EEA09F0213D3CE200140454 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				5EEA09F1213D3D2E00140454 /* StartupCommandsBuilder.swift */,
+				5EEA09F3213D3D9500140454 /* InitializeAppearanceCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		5EEA09F5213D3E2E00140454 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EEA09F6213D3E4600140454 /* UIColorExtension.swift */,
+				5EEA09F8213D473100140454 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EEA09F7213D3E4600140454 /* UIColorExtension.swift in Sources */,
 				5EEA09EB213BF04200140454 /* BookDetailsConfigurator.swift in Sources */,
+				5EEA09F4213D3D9500140454 /* InitializeAppearanceCommand.swift in Sources */,
 				5EEA09E5213BE92200140454 /* BooksViewRouter.swift in Sources */,
 				5EEA09D4213B626100140454 /* Book.swift in Sources */,
 				5EEA09DE213B639F00140454 /* StaticDataBooksGateway.swift in Sources */,
+				5EEA09F9213D473100140454 /* UIViewExtension.swift in Sources */,
 				5EEA09ED213BF04F00140454 /* BookDetailsPresenter.swift in Sources */,
 				5EEA09D1213B61FA00140454 /* BooksConfigurator.swift in Sources */,
 				5EEA09B0213B5F3E00140454 /* BooksViewController.swift in Sources */,
@@ -313,6 +344,7 @@
 				5EEA09DC213B636D00140454 /* BooksGateway.swift in Sources */,
 				5EEA09E8213BE96900140454 /* ViewRouter.swift in Sources */,
 				5EEA09AE213B5F3E00140454 /* AppDelegate.swift in Sources */,
+				5EEA09F2213D3D2E00140454 /* StartupCommandsBuilder.swift in Sources */,
 				5EEA09E0213B686D00140454 /* JSONFileBooksGateway.swift in Sources */,
 				5EEA09D6213B62DD00140454 /* BooksPresenter.swift in Sources */,
 			);
