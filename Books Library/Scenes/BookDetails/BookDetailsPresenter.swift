@@ -7,12 +7,11 @@
 //
 
 import Foundation
-import UIKit
 
 protocol BookDetailsView: class {
     func displayScreenTitle(title: String)
     func display(title: String, author: String)
-    func display(image: UIImage)
+    func display(imageName: String)
     func display(pages: String, releaseDate: String, isbn: String, language: String)
     func display(summary: String)
 }
@@ -33,7 +32,7 @@ class BookDetailsPresenterImplementation: BookDetailsPresenter {
     func viewDidLoad() {
         view?.display(title: book.title, author: book.author)
         view?.display(pages: "\(book.pages)", releaseDate: "", isbn: book.isbn, language: book.language)
-        //view?.display(image: UIImage(named: "No Image")!)
+        view?.display(imageName: book.image)
         view?.display(summary: book.summary)
     }
 }

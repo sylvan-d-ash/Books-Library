@@ -39,8 +39,10 @@ extension BookDetailsViewController: BookDetailsView {
         authorLabel.text = author
     }
     
-    func display(image: UIImage) {
-        coverImageView.image = image
+    func display(imageName: String) {
+        if let image = UIImage(named: imageName) {
+            coverImageView.image = image
+        }
     }
     
     func display(pages: String, releaseDate: String, isbn: String, language: String) {
