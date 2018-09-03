@@ -21,6 +21,7 @@ class BookCollectionViewCell: UICollectionViewCell {
     
     func formatCell() {
         // round corners
-        // add shadow
+        containerView.roundCorners()
+        bookImageView.roundCorners()
     }
 }

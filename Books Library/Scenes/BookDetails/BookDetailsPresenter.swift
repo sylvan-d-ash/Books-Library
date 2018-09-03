@@ -31,7 +31,7 @@ class BookDetailsPresenterImplementation: BookDetailsPresenter {
     
     func viewDidLoad() {
         view?.display(title: book.title, author: book.author)
-        view?.display(pages: "\(book.pages)", releaseDate: "", isbn: book.isbn, language: book.language)
+        view?.display(pages: "\(book.pages)", releaseDate: book.releaseDate.toString(), isbn: book.isbn, language: book.language)
         view?.display(imageName: book.image)
         view?.display(summary: book.summary)
     }

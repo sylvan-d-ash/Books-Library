@@ -15,7 +15,9 @@ class JSONFileBooksGateway: BooksGateway {
             do {
                 // process to an array of books
                 let data = try Data(contentsOf: url)
-                let books = try JSONDecoder().decode([Book].self, from: data)
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                let books = try decoder.decode([Book].self, from: data)
                 
                 // return books
                 completion(books, nil)

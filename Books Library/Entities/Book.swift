@@ -13,7 +13,7 @@ struct Book: Decodable {
     var isbn: String
     var title: String
     var author: String
-    var releaseDate: Date?
+    var releaseDate: Date
     var pages: Int
     var language: String
     var summary: String
