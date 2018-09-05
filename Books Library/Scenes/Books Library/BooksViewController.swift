@@ -11,9 +11,10 @@ import UIKit
 class BooksViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    fileprivate let reuseIdentifier = "BookCollectionViewCell"
     let configurator = BooksConfiguratorImplementation()
     var presenter: BooksPresenter!
+    fileprivate let reuseIdentifier = "BookCollectionViewCell"
+    fileprivate var loadingView: LoadingView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,8 @@ class BooksViewController: UIViewController {
     }
 }
 
+// MARK:- UICollectionViewDataSource
+
 extension BooksViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return presenter.numberOfBooks
@@ -42,11 +45,15 @@ extension BooksViewController: UICollectionViewDataSource {
     }
 }
 
+// MARK:- UICollectionViewDelegateFlowLayout
+
 extension BooksViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return presenter.getCellSize(size: collectionView.bounds)
     }
 }
+
+// MARK:- UICollectionViewDelegate
 
 extension BooksViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -54,13 +61,15 @@ extension BooksViewController: UICollectionViewDelegate {
     }
 }
 
+// MARK:- BooksView
+
 extension BooksViewController: BooksView {
     func showProgress() {
-        //
+        loadingView = LoadingView(self.view, dimming: false).show()
     }
     
     func hideProgress() {
-        //
+        loadingView?.terminate()
     }
     
     func refreshBooksView() {
@@ -68,7 +77,7 @@ extension BooksViewController: BooksView {
     }
     
     func showError(_ title: String, message: String) {
-        //
+        presentAlert(withTitle: title, and: message)
     }
     
 }

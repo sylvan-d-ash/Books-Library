@@ -8,7 +8,12 @@
 
 import UIKit
 
-class BookCollectionViewCell: UICollectionViewCell {
+protocol BookCellView {
+    func display(imageName: String)
+    func formatCell()
+}
+
+class BookCollectionViewCell: UICollectionViewCell, BookCellView {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var bookImageView: UIImageView!

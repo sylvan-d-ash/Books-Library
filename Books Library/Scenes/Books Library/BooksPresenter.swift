@@ -16,22 +16,20 @@ protocol BooksView: class {
     func showError(_ title: String, message: String)
 }
 
-
 protocol BooksPresenter {
     var numberOfBooks: Int { get }
     var router: BooksViewRouter { get }
     func viewDidLoad()
-    func configure(cell: BookCollectionViewCell, for row: Int)
+    func configure(cell: BookCellView, for row: Int)
     func getCellSize(size: CGRect) -> CGSize
     func didSelect(row: Int)
 }
-
 
 class BooksPresenterImplementation: BooksPresenter {
     fileprivate weak var view: BooksView?
     fileprivate var booksGateway: BooksGateway
     internal var router: BooksViewRouter
-    fileprivate var books: [Book] = []
+    internal var books: [Book] = []
     
     var numberOfBooks: Int {
         return books.count
@@ -61,7 +59,7 @@ class BooksPresenterImplementation: BooksPresenter {
         }
     }
     
-    func configure(cell: BookCollectionViewCell, for row: Int) {
+    func configure(cell: BookCellView, for row: Int) {
         let book = books[row]
         cell.display(imageName: book.image)
         cell.formatCell()
@@ -80,6 +78,7 @@ class BooksPresenterImplementation: BooksPresenter {
     }
 }
 
+// MARK:- Fileprivate functions
 
 fileprivate extension BooksPresenterImplementation {
     func handleBooksReceived(_ books: [Book]) {

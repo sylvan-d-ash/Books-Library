@@ -19,3 +19,9 @@ struct Book: Decodable {
     var summary: String
     var image: String
 }
+
+extension Book: Equatable {
+    static func == (lhs: Book, rhs: Book) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
