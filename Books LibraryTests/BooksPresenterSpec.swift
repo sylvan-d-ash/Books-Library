@@ -41,6 +41,11 @@ class BooksPresenterSpec: QuickSpec {
         var errorReturned: Error? = nil
         var results: [Book] = []
         
+        init() {
+            results.append(Book(id: "1", isbn: "BK001", title: "A Game of Thrones", author: "George R. R. Martin", releaseDate: Date(), pages: 500, language: "English", summary: "...", image: "A Game of Thrones"))
+            results.append(Book(id: "2", isbn: "BK002", title: "A Clash of Kings", author: "George R. R. Martin", releaseDate: Date(), pages: 554, language: "English", summary: "...", image: "A Clash of Kings"))
+        }
+        
         func fetchBooks(completion: @escaping ([Book], Error?) -> Void) {
             completion(results, errorReturned)
         }
@@ -51,6 +56,18 @@ class BooksPresenterSpec: QuickSpec {
         
         func presentDetailsView(for book: Book) {
             passedBook = book
+        }
+    }
+    
+    class BookCellViewSpy: BookCellView {
+        var displayedImageName = ""
+        
+        func display(imageName: String) {
+            displayedImageName =  imageName
+        }
+        
+        func formatCell() {
+            return
         }
     }
     
@@ -65,13 +82,8 @@ class BooksPresenterSpec: QuickSpec {
         }
         
         describe("viewDidLoad") {
-            let books: [Book] = []
-            
             context("success") {
                 it("calls refreshData") {
-                    // given
-                    booksGatewaySpy.results = books
-                    
                     // when
                     sut.viewDidLoad()
                     
@@ -83,8 +95,7 @@ class BooksPresenterSpec: QuickSpec {
                 
                 it("has a specific number of books") {
                     // given
-                    let expectedNumberOfBooks = books.count
-                    booksGatewaySpy.results = books
+                    let expectedNumberOfBooks = booksGatewaySpy.results.count
                     
                     // when
                     sut.viewDidLoad()
@@ -115,13 +126,33 @@ class BooksPresenterSpec: QuickSpec {
         
         describe("configure cell") {
             it("displays expected data") {
-                fail()
+                // given
+                sut.books = booksGatewaySpy.results
+                let rowToConfigure = 1
+                let expectedImageName = "A Clash of Kings"
+                
+                let bookCellViewSpy = BookCellViewSpy()
+                
+                // when
+                sut.configure(cell: bookCellViewSpy, for: rowToConfigure)
+                
+                // then
+                expect(bookCellViewSpy.displayedImageName).to(equal(expectedImageName))
             }
         }
         
         describe("didSelect") {
             it("navigates to details view") {
-                fail()
+                // given
+                let rowToSelect = 1
+                let books = booksGatewaySpy.results
+                sut.books = books
+                
+                // when
+                sut.didSelect(row: rowToSelect)
+                
+                // then
+                expect(booksViewRouterSpy.passedBook).to(equal(books[rowToSelect]))
             }
         }
     }
