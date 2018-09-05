@@ -32,6 +32,8 @@
 		5EEA09FB213D504100140454 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09FA213D504100140454 /* DateExtension.swift */; };
 		5EEA09FD213DAF8C00140454 /* BooksPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09FC213DAF8C00140454 /* BooksPresenterSpec.swift */; };
 		5EEA0A00213EAAFC00140454 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09FF213EAAFC00140454 /* NSError.swift */; };
+		5EEA0A02213FD3C200140454 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA0A01213FD3C200140454 /* UIViewController.swift */; };
+		5EEA0A04213FD58000140454 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA0A03213FD58000140454 /* LoadingView.swift */; };
 		776EF709A95D2566970B213E /* Pods_Books_Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56C9A18DBE2A134C81B9209 /* Pods_Books_Library.framework */; };
 		BC482E4CE3EC9F30AE5C40D4 /* Pods_Books_LibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579FAC48E2A3150AB1A04FA3 /* Pods_Books_LibraryTests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,8 @@
 		5EEA09FA213D504100140454 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		5EEA09FC213DAF8C00140454 /* BooksPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksPresenterSpec.swift; sourceTree = "<group>"; };
 		5EEA09FF213EAAFC00140454 /* NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
+		5EEA0A01213FD3C200140454 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		5EEA0A03213FD58000140454 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		6E96EC469354CAE3B3C8A0AD /* Pods-Books LibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Books LibraryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Books LibraryTests/Pods-Books LibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A56C9A18DBE2A134C81B9209 /* Pods_Books_Library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Books_Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E964C98DE5F831758F9A8795 /* Pods-Books Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Books Library.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Books Library/Pods-Books Library.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				5EEA09E7213BE96900140454 /* ViewRouter.swift */,
+				5EEA0A03213FD58000140454 /* LoadingView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				5EEA09F6213D3E4600140454 /* UIColorExtension.swift */,
 				5EEA09F8213D473100140454 /* UIViewExtension.swift */,
 				5EEA09FA213D504100140454 /* DateExtension.swift */,
+				5EEA0A01213FD3C200140454 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -443,6 +449,7 @@
 				5EEA09F4213D3D9500140454 /* InitializeAppearanceCommand.swift in Sources */,
 				5EEA09E5213BE92200140454 /* BooksViewRouter.swift in Sources */,
 				5EEA09D4213B626100140454 /* Book.swift in Sources */,
+				5EEA0A04213FD58000140454 /* LoadingView.swift in Sources */,
 				5EEA09FB213D504100140454 /* DateExtension.swift in Sources */,
 				5EEA09DE213B639F00140454 /* StaticDataBooksGateway.swift in Sources */,
 				5EEA09F9213D473100140454 /* UIViewExtension.swift in Sources */,
@@ -452,6 +459,7 @@
 				5EEA09D9213B632200140454 /* BookCollectionViewCell.swift in Sources */,
 				5EEA09EF213BF06400140454 /* BookDetailsViewController.swift in Sources */,
 				5EEA09DC213B636D00140454 /* BooksGateway.swift in Sources */,
+				5EEA0A02213FD3C200140454 /* UIViewController.swift in Sources */,
 				5EEA09E8213BE96900140454 /* ViewRouter.swift in Sources */,
 				5EEA09AE213B5F3E00140454 /* AppDelegate.swift in Sources */,
 				5EEA09F2213D3D2E00140454 /* StartupCommandsBuilder.swift in Sources */,

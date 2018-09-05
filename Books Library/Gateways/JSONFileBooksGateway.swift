@@ -20,7 +20,10 @@ class JSONFileBooksGateway: BooksGateway {
                 let books = try decoder.decode([Book].self, from: data)
                 
                 // return books
-                completion(books, nil)
+                let delayTime = DispatchTime.now() + Double(Int64(2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+                DispatchQueue.main.asyncAfter(deadline: delayTime) {
+                    completion(books, nil)
+                }
             } catch {
                 // return error
                 print(error.localizedDescription)
