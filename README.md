@@ -9,6 +9,6 @@ A lot of reference to the [Library app](https://github.com/FortechRomania/ios-mv
 
 ## Screenshots
 
-![books](https://user-images.githubusercontent.com/4120488/45088320-4a112c80-b111-11e8-91b5-8d37f4bd7560.png)
-![details](https://user-images.githubusercontent.com/4120488/45088322-4a112c80-b111-11e8-8df0-11de99b7f8af.png)
-![details 2](https://user-images.githubusercontent.com/4120488/45088321-4a112c80-b111-11e8-82b6-ad0e95f2962b.png)
+![books](https://user-images.githubusercontent.com/4120488/45088940-3d8dd380-b113-11e8-98e2-e567fdfc9d5c.png)
+![details](https://user-images.githubusercontent.com/4120488/45088942-3d8dd380-b113-11e8-8246-ae403809e378.png)
+![details 2](https://user-images.githubusercontent.com/4120488/45088941-3d8dd380-b113-11e8-8122-8004385e3a84.png)
