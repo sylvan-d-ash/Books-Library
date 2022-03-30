@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E27E180213FE350008B0BB7 /* BookDetailsPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27E17F213FE350008B0BB7 /* BookDetailsPresenterSpec.swift */; };
+		5EBDDCF1218B762200947A7C /* SimpleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDDCF0218B762200947A7C /* SimpleSpec.swift */; };
 		5EEA09AE213B5F3E00140454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09AD213B5F3E00140454 /* AppDelegate.swift */; };
 		5EEA09B0213B5F3E00140454 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA09AF213B5F3E00140454 /* BooksViewController.swift */; };
 		5EEA09B3213B5F3E00140454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA09B1213B5F3E00140454 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		1851B24260FB62F3D582CDDA /* Pods-Books LibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Books LibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Books LibraryTests/Pods-Books LibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		579FAC48E2A3150AB1A04FA3 /* Pods_Books_LibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Books_LibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E27E17F213FE350008B0BB7 /* BookDetailsPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsPresenterSpec.swift; sourceTree = "<group>"; };
+		5EBDDCF0218B762200947A7C /* SimpleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpec.swift; sourceTree = "<group>"; };
 		5EEA09AA213B5F3E00140454 /* Books Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Books Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEA09AD213B5F3E00140454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EEA09AF213B5F3E00140454 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				5EEA09FC213DAF8C00140454 /* BooksPresenterSpec.swift */,
 				5E27E17F213FE350008B0BB7 /* BookDetailsPresenterSpec.swift */,
+				5EBDDCF0218B762200947A7C /* SimpleSpec.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -340,10 +343,11 @@
 				TargetAttributes = {
 					5EEA09A9213B5F3E00140454 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					5EEA09BD213B5F3F00140454 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1000;
 						TestTargetID = 5EEA09A9213B5F3E00140454;
 					};
 				};
@@ -479,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EBDDCF1218B762200947A7C /* SimpleSpec.swift in Sources */,
 				5EEA09FD213DAF8C00140454 /* BooksPresenterSpec.swift in Sources */,
 				5EEA0A00213EAAFC00140454 /* NSError.swift in Sources */,
 				5E27E180213FE350008B0BB7 /* BookDetailsPresenterSpec.swift in Sources */,
@@ -642,7 +647,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.daitensai.Books-Library";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -660,7 +665,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.daitensai.Books-Library";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -682,7 +687,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.daitensai.Books-LibraryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Books Library.app/Books Library";
 			};
@@ -704,7 +709,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.daitensai.Books-LibraryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Books Library.app/Books Library";
 			};

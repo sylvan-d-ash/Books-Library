@@ -65,12 +65,12 @@ class LoadingView: UIView {
         
         if whiten {
             self.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 0.55)
-            activityIndicator.activityIndicatorViewStyle = .gray
+            activityIndicator.style = .gray
             
         } else {
             if dimming {
                 self.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.55)
-                activityIndicator.activityIndicatorViewStyle = .gray
+                activityIndicator.style = .gray
                 
             } else {
                 self.backgroundColor = UIColor.clear

@@ -18,6 +18,6 @@ struct InitializeAppearanceCommand: Command {
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.tintColor = .white
         navigationBarAppearance.barTintColor = .libBackgroundColor
-        navigationBarAppearance.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
 }
